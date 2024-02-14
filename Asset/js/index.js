@@ -1,0 +1,19 @@
+const Login= (e)=>{
+
+    e.preventDefault();
+
+    let user= document.getElementById('participant');
+    
+    if(user.value !== "") window.location.href= "/Instruction/?user="+user.value;
+    
+    else{
+        let err= document.querySelector('span.error');
+        err.innerHTML= "Invalid input";
+        err.style.display= "block";
+    }
+
+}
+
+window.onload= ()=>{
+    document.querySelector('form').addEventListener("submit", Login);
+}

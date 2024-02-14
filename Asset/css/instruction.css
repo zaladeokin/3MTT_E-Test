@@ -1,0 +1,14 @@
+h2{
+    margin-bottom: 1em;
+}
+
+button{
+    min-width: unset;
+    width: fit-content;
+    margin-top: 1em;
+}
+
+button a{
+    text-decoration: none;
+    color: #000;
+}
