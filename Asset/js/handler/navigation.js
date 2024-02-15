@@ -11,7 +11,7 @@ const navigation= (e, current_question, answer)=>{
         else if(e.target.dataset.nav === "next" && current_question !== cookies.read('question_length') - 1)current_question += 1;
     }
 
-    let questions= JSON.parse(cookies.read('question' + current_question))
+    let questions= JSON.parse(cookies.read('question' + current_question));
 
     //Hide and Show nav btn
     // Show prev btn

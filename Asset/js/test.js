@@ -2,7 +2,6 @@ import * as cookies from './utility/cookies.js';
 import navigation from './handler/navigation.js';
 
 const user= cookies.read('user');
-// const questions= JSON.parse(cookies.read('question'));
 let current_question= 0;
 const answer= new Array(cookies.read('question_length')+0);
 
