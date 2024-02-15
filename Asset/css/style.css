@@ -32,6 +32,11 @@ footer{
     padding: 2%;
 }
 
+h2 {
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
 input[type="text"],
 input[type="submit"],
 button {
