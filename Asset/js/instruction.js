@@ -23,6 +23,7 @@ if(params.has('user') === false || params.get('user')=== ""){
         cookies.create('user', user);
         cookies.create('question', JSON.stringify(AllQuestion));
         document.querySelector('button').disabled= false;
+        console.log(JSON.stringify(AllQuestion))
     })
     .catch((err)=>{
         console.log('An error occurred on the server');

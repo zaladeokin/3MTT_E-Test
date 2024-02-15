@@ -4,6 +4,7 @@ import navigation from './handler/navigation.js';
 
 const user= cookies.read('user');
 const questions= JSON.parse(cookies.read('question'));
+console.log(JSON.parse(cookies.read('question')))
 let current_question= 0;
 const answer= new Array(questions.length);
 
