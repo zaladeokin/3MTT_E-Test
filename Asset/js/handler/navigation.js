@@ -27,8 +27,8 @@ const navigation= (e, current_question, answer)=>{
     //Display  Question 
     test_util.question(document.querySelector('#question'), questions.question.text, current_question);
 
-    test_util.options(document.querySelector('#options'), questions.shuffleOption, questions.id, answer[current_question], (e)=>{
-        answer[current_question]= updateSelection(e);
+    test_util.options(document.querySelector('#options'), questions.shuffleOption, questions.id, answer["question"+current_question], (e)=>{
+        answer["question"+current_question]= updateSelection(e);
     });
     
     return current_question; 

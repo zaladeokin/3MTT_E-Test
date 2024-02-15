@@ -1,0 +1,5 @@
+#preview{
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}

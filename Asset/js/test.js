@@ -4,7 +4,12 @@ import submit from './handler/submit.js';
 
 const user= cookies.read('user');
 let current_question= 0;
-const answer= new Array(cookies.read('question_length')+0);
+
+let answer= {};
+let limit= cookies.read('question_length') * 1;
+for(let i = 0; i < limit; i++){
+    answer["question"+i]= null
+}
 
 window.addEventListener('load', ()=>{
     //Display  participant name
