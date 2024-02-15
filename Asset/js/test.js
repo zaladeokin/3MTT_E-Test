@@ -2,9 +2,10 @@ import * as cookies from './utility/cookies.js';
 import * as test_util from './utility/test_util.js';
 import navigation from './handler/navigation.js';
 
+console.log(cookies.read('question'))
+console.log(cookies.read('user'))
 const user= cookies.read('user');
 const questions= JSON.parse(cookies.read('question'));
-console.log(JSON.parse(cookies.read('question')))
 let current_question= 0;
 const answer= new Array(questions.length);
 
