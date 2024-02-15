@@ -7,8 +7,16 @@ main{
 }
 
 #candidate{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
     padding: 0;
     border-bottom: 1px solid #000;
+}
+
+#candidate button{
+    margin-bottom: 1em;
+    width: fit-content;
 }
 
 #question{
@@ -35,7 +43,7 @@ main label{
     margin-top: 1em;
 }
 
-#nav button{
+#nav button, #candidate button{
     min-width: 5%;
 }
 
@@ -44,4 +52,8 @@ main label{
 }
 
 
-
+@media screen and (min-width:500px) {
+    #candidate {
+            flex-direction: row-reverse;
+        }
+}

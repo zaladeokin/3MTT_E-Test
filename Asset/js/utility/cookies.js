@@ -38,5 +38,14 @@ const read= (key)=>{
     return value;
 }
 
+const delete_ck= (key)=>{
+    //Back date expiry to be 1hour
+    let now= new Date().getTime();
+    let expires= new Date(now-(60 * 60 * 1000));
 
-export { create, read };
+    document.cookie = `${key}=;expires=${expires.toUTCString()};path=/`;
+
+}
+
+
+export { create, read, delete_ck };

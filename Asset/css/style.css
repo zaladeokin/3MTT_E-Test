@@ -9,7 +9,7 @@ header{
     display: flex;
     border-bottom: 1px solid #000;
     padding: 2%;
-    max-height: 20vh;
+    max-height: 25vh;
 }
 
 main{
@@ -23,7 +23,7 @@ main{
 }
 
 footer{
-    max-height: 10vh;
+    max-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;

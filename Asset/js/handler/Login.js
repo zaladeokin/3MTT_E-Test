@@ -1,4 +1,4 @@
-const Login= (e)=>{
+const login= (e)=>{
 
     e.preventDefault();
 
@@ -14,4 +14,4 @@ const Login= (e)=>{
 
 }
 
-export default Login;
+export default login;
