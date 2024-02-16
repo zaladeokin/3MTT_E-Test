@@ -1,4 +1,4 @@
-import login from "./handler/login.js";
+import Login from "./handler/Login.js";
 import * as cookies from './utility/cookies.js';
 
 
@@ -13,5 +13,5 @@ cookies.delete_ck('user')
 
 
 window.addEventListener('load', ()=>{
-    document.querySelector('form').addEventListener("submit", login);
+    document.querySelector('form').addEventListener("submit", Login);
 });
