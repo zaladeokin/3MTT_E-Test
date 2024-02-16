@@ -3,7 +3,7 @@ import * as cookies from './utility/cookies.js';
 let params= new URLSearchParams(window.location.search);
 
 if(params.has('user') === false || params.get('user')=== ""){
-    window.location.href= "../../index.html";
+    window.location.href= "/";
 }else{
 
     let user= params.get('user');

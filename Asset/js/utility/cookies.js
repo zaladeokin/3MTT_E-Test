@@ -5,8 +5,6 @@ const create= (key, value)=>{
     let expires= new Date(now+(60 * 60 * 1000));
 
     document.cookie = `${key}=${value};expires=${expires.toUTCString()};path=/`;
-
-    // console.log(document.cookie)
 }
 
 
@@ -34,7 +32,6 @@ const read= (key)=>{
         value = "";
     }
 
-    // console.log(value)
     return value;
 }
 

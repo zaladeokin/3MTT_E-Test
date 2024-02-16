@@ -48,7 +48,6 @@ const preview= (element, answers)=>{
         let div1= document.createElement("div");
 
         let question_obj= JSON.parse(cookies.read(answer[0]));
-        console.log(question_obj)
         //Show question
         question(div, question_obj.question.text, index);
         //Show option
@@ -59,8 +58,6 @@ const preview= (element, answers)=>{
 
         //Check submitted answer
         document.getElementsByName(question_obj.id).forEach((inp)=>{
-            console.log(answer)
-            console.log(inp.value)
             if(inp.value === answer[1]) inp.checked= true;
             
             if(inp.value === question_obj.correctAnswer) document.getElementById(question_obj.id+"_"+inp.value).style.color= "#008000";
