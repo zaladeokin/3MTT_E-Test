@@ -6,7 +6,6 @@ Visit [E-Test](https://zaladeokin.github.io/3MTT_E-Test/) to take a test.
 ## Features
 
 - **User authentication**: Users can log in to access quizzes.
-- **Quiz categories**: Quizzes are categorized by topics for easy navigation.
 - **Quiz timer**: Quizzes have a timer, and users must complete them within a specified time.
 - **Scoring**: Answer are evaluated, and users can see their score.
 - **Question Preview**: User will be able to see the questions they got right and/or wrong with their respective. correction.
