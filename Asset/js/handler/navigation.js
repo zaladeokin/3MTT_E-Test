@@ -17,11 +17,11 @@ const navigation= (e, current_question, answer)=>{
     // Show prev btn
     if(current_question === 1 ) node[0].style.visibility = "visible";
     // Show next btn
-    if(current_question === questions.length - 2) node[1].style.visibility = "visible";
+    if(current_question === cookies.read('question_length') - 2) node[1].style.visibility = "visible";
     //Hide prev btn
     else if(current_question === 0) node[0].style.visibility = "hidden";
     //Hide next btn
-    else if(current_question === questions.length - 1) node[1].style.visibility = "hidden";
+    else if(current_question === cookies.read('question_length') - 1) node[1].style.visibility = "hidden";
 
 
     //Display  Question 
