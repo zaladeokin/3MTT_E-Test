@@ -1,6 +1,9 @@
 import * as cookies from './utility/cookies.js';
 import * as test_util from './utility/test_util.js';
-//Work on redirect if cookie not set
+
+//redirect if cookie not set
+const user= cookies.read('user');
+if(user === "") window.location.href= "/";
 
 let correct= 0;
 const total_question= cookies.read('question_length') * 1;

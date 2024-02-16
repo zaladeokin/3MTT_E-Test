@@ -1,6 +1,13 @@
 header{
     border-bottom: unset;
+    display: flex;
+    justify-content: space-between;
 }
+
+#timer{
+    font-size: 1.5em;
+}
+
 main{
     flex-direction: column;
     align-items: flex-start;
