@@ -30,6 +30,6 @@ if(params.has('user') === false || params.get('user')=== ""){
 }
 
 
-addEventListener('load', ()=>{
+window.addEventListener('load', ()=>{
     document.querySelector('button').disabled= true;
 });

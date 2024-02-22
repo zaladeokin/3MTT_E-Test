@@ -14,8 +14,10 @@ answers.forEach((answer)=>{
     if(question.correctAnswer === answer[1]) correct += 1;
 });
 
-addEventListener('load', ()=>{
+window.addEventListener('load', ()=>{
     document.getElementById('score').textContent= `${(correct/total_question) * 100}%`;
+    document.getElementById('candidate').textContent= user;
+    document.getElementById('date').textContent= new Date();;
     test_util.preview(document.getElementById('preview'), answers);
     
 });

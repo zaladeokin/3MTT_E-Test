@@ -10,6 +10,7 @@ Visit [E-Test](https://zaladeokin.github.io/3MTT_E-Test/) to take a test.
 - **Scoring**: Answer are evaluated, and users can see their score.
 - **Question Preview**: User will be able to see the questions they got right and/or wrong with their respective. correction.
 - **API**: TRIVIA Question Resources.
+- **Responsive Design**: Enjoy a seamless experience across various devices and screen sizes.
 
 ## Technologies Used
 
